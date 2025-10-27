@@ -30,15 +30,24 @@ Manual:
 
 5. Make sure that Minecraft is already installed on the computer
 
-6. If using a windows machine, go to repository directy and run python windows_setup.py
+6. Install WinGet.
+	a. In the bottom search of a windows machine, search for WinGet.  This should give the WinGet app downloadable
+		from windows App store.  Follow instructions to install. This should install a program in
+		C:\Program Files\WinGet\Links\psexec.exe
+
+7. If using a windows machine, go to repository directy and run python windows_setup.py
+
+8. Copy shortcuts from C:\etc to Desktop
+
+9. For both shortcuts, edit shortcuts, go to Advanced properties, and set to "Run as administrator". Be sure to apply
+	changes.
 
 
 The script should do the following:
 
-1. Install WinGet
-2. Install portablemc
-3. Move files to /etc/launch-mc directory
-4. Add executable properties to batch file
+1. Install portablemc
+2. Move files to /etc/launch-mc directory
+3. Create shortcuts
 
 
 After setup, make sure to run mc-update.bat to start update process
