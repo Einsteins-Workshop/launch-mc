@@ -30,18 +30,18 @@ Manual:
 
 5. Make sure that Minecraft is already installed on the computer
 
-6. If using a windows machine, go to repository directy and run python windows_setup.py
+6. If using a windows machine, go to repository in a command shell that is run as admininstrator and 
+    a. Run pip install pywin32
+    b. Run python windows_setup.py
 
-7. Copy shortcuts from C:\etc to Desktop
+7. Copy shortcuts from this directory, launch-mc\build to Desktop
 
-8. For both shortcuts, edit shortcuts, go to Advanced properties, and set to "Run as administrator". Be sure to apply
-	changes.
 
 
 The script should do the following:
 
 1. Install portablemc
-2. Move files to /etc/launch-mc directory
+2. Move files to launch-mc\build directory
 3. Create shortcuts
 
 

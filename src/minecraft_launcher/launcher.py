@@ -56,7 +56,7 @@ def computer_number():
     computer_name = os.environ["COMPUTERNAME"]
     result = re.search(r'Einstein.*(\d+)$', computer_name)
     if result == None:
-        result = re.search(r'^(\d+)', computer_name)
+        result = re.search(r'^(\d+)-EW', computer_name)
 
     if result == None and computer_name == "BOOKKEEPER":
         return "01"
