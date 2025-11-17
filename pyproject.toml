@@ -1,0 +1,12 @@
+[project]
+name = "ew-minecraft-launcher"
+version = "1.0.0"
+description = "Minecraft Launcher for Einstein's Workshop"
+authors = [
+    { name = "Dean Chung", email = "dean@einsteinsworkshop.com" }
+]
+requires-python = ">=3.11"
+
+[project.scripts]
+launch-1-19-4 = "minecraft_launcher.launcher:launch_1_19_4"
+launch-code-kingdoms = "minecraft_launcher.launcher:launch_code_kingdoms"

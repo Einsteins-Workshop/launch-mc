@@ -30,16 +30,11 @@ Manual:
 
 5. Make sure that Minecraft is already installed on the computer
 
-6. Install WinGet.
-	a. In the bottom search of a windows machine, search for WinGet.  This should give the WinGet app downloadable
-		from windows App store.  Follow instructions to install. This should install a program in
-		C:\Program Files\WinGet\Links\psexec.exe
+6. If using a windows machine, go to repository directy and run python windows_setup.py
 
-7. If using a windows machine, go to repository directy and run python windows_setup.py
+7. Copy shortcuts from C:\etc to Desktop
 
-8. Copy shortcuts from C:\etc to Desktop
-
-9. For both shortcuts, edit shortcuts, go to Advanced properties, and set to "Run as administrator". Be sure to apply
+8. For both shortcuts, edit shortcuts, go to Advanced properties, and set to "Run as administrator". Be sure to apply
 	changes.
 
 
