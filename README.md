@@ -14,27 +14,39 @@ The following steps will be required:
 
 Manual:
 
+0. Start computer in Einstein user
+
 1. Install python.
-	a. To check, run cmd to bring up cmd prompt
-	b. Type python --version.  If this gives a python version of 3.0 or above, then skip remaining install python steps
-	c. Go to python.org/downloads and click on "Download Python install manager"
+
+	a. To check, run cmd in admin mode: type Ctl-R, enter `cmd`, and do Shift-Ctl-Enter, typing in admin password
+
+	b. Type `python --version`.  If this gives a python version of 3.0 or above, then skip remaining install python
+steps
+	
+    c. Go to python.org/downloads and click on "Download Python install manager"
 
 2. Install git.
-	a. To check, run git --version.  If this gives any sort of version, then skip remaining install git steps
+
+	a. To check, run `git --version`.  If this gives any sort of version, then skip remaining install git steps
+
 	b. Go to git-scm.com/install and install git
 
 3. Clone repository
-	a. In any writeable directory, run git clone https://github.com/Einsteins-Workshop/launch-mc.git
 
-4. In command prompt, check that %COMPUTERNAME% has the correct format, either starting with EINSTEIN and ending in two digits or starting with some number of digits. If not, report to IT
+	a. In any writeable directory, run `git clone https://github.com/Einsteins-Workshop/launch-mc.git`
+
+4. In command prompt, type `echo %COMPUTERNAME%` to check that %COMPUTERNAME% has the correct format, either starting 
+with EINSTEIN and ending in two digits or starting with some number of digits. If not, report to IT
 
 5. Make sure that Minecraft is already installed on the computer
 
 6. If using a windows machine, go to repository in a command shell that is run as admininstrator and 
-    a. Run pip install pywin32
-    b. Run python windows_setup.py
+    a. Run `pip install pywin32`
+    b. Run `python windows_setup.py` while in the git clone directory
 
-7. Copy shortcuts from this directory, launch-mc\build to Desktop
+7. Copy shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
+
+8. Pin the 1.19.4 Minecraft launcher to the taskbar.
 
 
 
