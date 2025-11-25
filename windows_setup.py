@@ -7,8 +7,8 @@ import sys
 
 def create_shortcut_to_etc_bin(link_name, target, icon_file):
     desktop = os.path.join(os.environ['USERPROFILE'], 'Desktop')
-    working_directory = "C:\\etc\\bin\\"
-    #working_directory = "build"
+    #working_directory = "C:\\etc\\bin\\"
+    working_directory = "build"
     path = os.path.join(working_directory, link_name)
     icon_file = f"{os.getcwd()}\\build\\assets\\{icon_file}"
     portable_mc_executable = os.path.join(os.path.dirname(sys.executable), f"{target}.exe")
