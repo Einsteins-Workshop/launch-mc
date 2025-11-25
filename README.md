@@ -27,14 +27,16 @@ steps
        If it shows two options, such as Python3.12.0a5 and Python 3.14.0, run 
        `winget uninstall python --id Python.Python.3.12 --all-versions`
 
-    c. Install python through command line, either `winget install Python.Python.3.13` if no prior version of python
-       was installed, or `winget install Python.Python.3.12` if Python 3.12.0a5 was
+    d. Install python through command line, either `winget install Python.Python.3.13` if no prior version of python
+       was installed, or `winget install Python.Python.3.12` if Python 3.12.0a5 was. Note that the current
+       window will not have python in its path, so you may want to create a new cmd shell.
 
 2. Install git.
 
 	a. To check, run `git --version`.  If this gives any sort of version, then skip remaining install git steps
 
-	b. Install git through command line call `winget install git --id Git.Git --source winget`
+	b. Install git through command line call `winget install git --id Git.Git --source winget`. Note that the current
+       window will not have python in its path, so you may want to create a new cmd shell.
 
 3. Clone repository
 
