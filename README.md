@@ -18,22 +18,28 @@ Manual:
 
 1. Install python.
 
-	a. To check, run cmd in admin mode: type Ctl-R, enter `cmd`, and do Shift-Ctl-Enter, typing in admin password
+	a. To check, run cmd in admin mode: type Windows-R, enter `cmd`, and do Shift-Ctl-Enter, typing in admin password
 
-	b. Type `python --version`.  If this gives a python version of 3.0 or above, then skip remaining install python
+	b. Type `python --version`.  If this gives a python version of 3.12.1 or above, then skip remaining install python
 steps
 	
-    c. Go to python.org/downloads and click on "Download Python install manager"
+    c. If Python 3.12.0a5 is installed, uninstall it with command `winget uninstall python --id Python.Python.3.12` 
+       If it shows two options, such as Python3.12.0a5 and Python 3.14.0, run 
+       `winget uninstall python --id Python.Python.3.12 --all-versions`
+
+    c. Install python through command line, either `winget install Python.Python.3.13` if no prior version of python
+       was installed, or `winget install Python.Python.3.12` if Python 3.12.0a5 was
 
 2. Install git.
 
 	a. To check, run `git --version`.  If this gives any sort of version, then skip remaining install git steps
 
-	b. Go to git-scm.com/install and install git
+	b. Install git through command line call `winget install git --id Git.Git --source winget`
 
 3. Clone repository
 
-	a. In any writeable directory, run `git clone https://github.com/Einsteins-Workshop/launch-mc.git`
+    a. In any writeable directory (preferrably in C:\Users\Einstein), run 
+    `git clone https://github.com/Einsteins-Workshop/launch-mc.git`
 
 4. In command prompt, type `echo %COMPUTERNAME%` to check that %COMPUTERNAME% has the correct format, either starting 
 with EINSTEIN and ending in two digits or starting with some number of digits. If not, report to IT
