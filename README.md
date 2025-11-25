@@ -49,7 +49,9 @@ with EINSTEIN and ending in two digits or starting with some number of digits. I
 5. Make sure that Minecraft is already installed on the computer
 
 6. If using a windows machine, go to repository in a command shell that is run as admininstrator and 
+
     a. Run `pip install pywin32`
+
     b. Run `python windows_setup.py` while in the git clone directory
 
 7. Copy shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
