@@ -38,7 +38,7 @@ steps
 
 3. Clone repository
 
-    a. In any writeable directory (preferrably in C:\Users\Einstein), run 
+    a. In any writeable directory (preferrably in C:\Users\Einstein, `cd \Users\Einstein`), run 
     `git clone https://github.com/Einsteins-Workshop/launch-mc.git`
 
 4. In command prompt, type `echo %COMPUTERNAME%` to check that %COMPUTERNAME% has the correct format, either starting 
