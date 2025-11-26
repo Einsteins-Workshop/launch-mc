@@ -65,5 +65,6 @@ except subprocess.CalledProcessError:
         with open(os.path.join("build", batch_file), "w") as file_to_write:
             file_to_write.write(batch_file_string)
 
-        batch_file_path = f"{os.getcwd()}\\build\\batch_file"
+        batch_file_path = f"{os.getcwd()}\\build\\{batch_file}"
         create_shortcut_to_etc_bin("EW Minecraft.lnk", batch_file_path, "mc-1.19.4.ico")
+        print("Backup installation method successful, ignore errors with metadata-generation-failed")
