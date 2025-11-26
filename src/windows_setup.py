@@ -45,7 +45,7 @@ original_path = os.path.join("windows", "etc")
 shutil.copytree(original_path, new_path, dirs_exist_ok=True)
 
 try:
-    subprocess.run(["pip", "install", "."], check=true)
+    subprocess.run(["pip", "install", "."], check=True)
     create_shortcut_to_etc_bin("EW Minecraft.lnk", "launch-1-19-4", "mc-1.19.4.ico")
     create_shortcut_to_etc_bin("Code Kingdoms.lnk", "launch-code-kingdoms", "mc-1.16.5.ico")
 except subprocess.CalledProcessError:
