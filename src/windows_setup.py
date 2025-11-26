@@ -53,7 +53,7 @@ except subprocess.CalledProcessError:
     # Use our backup plan to install templated .bat file
     context = {
         'user_name': user_name(),
-        'portable_mc': find_portablemc()
+        'portable_mc': str(find_portablemc())
     }
 
     batch_file = "mc-1.19.4.bat"
