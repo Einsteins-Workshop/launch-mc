@@ -20,22 +20,18 @@ Manual:
 
 	a. To check, run cmd in admin mode: type Windows-R, enter `cmd`, and do Shift-Ctl-Enter, typing in admin password
 
-	b. Type `python --version`.  If this gives a python version of 3.12.1 or above, then skip remaining install python
+	b. Type `python --version`.  If this gives a python version of 3.12 or above, then skip remaining install python
 steps
-	
-    c. If Python 3.12.0a5 is installed, uninstall it with command `winget uninstall python --id Python.Python.3.12` 
-       If it shows two options, such as Python3.12.0a5 and Python 3.14.0, run 
-       `winget uninstall python --id Python.Python.3.12 --all-versions`
 
-    d. Install python through command line, either `winget install Python.Python.3.13` if no prior version of python
-       was installed, or `winget install Python.Python.3.12` if Python 3.12.0a5 was. Note that the current
+    c. Install python through command line, with `winget install Python.Python.3.13` . Note that the current
        window will not have python in its path, so you may want to create a new cmd shell.
 
 2. Install git.
 
 	a. To check, run `git --version`.  If this gives any sort of version, then skip remaining install git steps
 
-	b. Install git through command line call `winget install git --id Git.Git --source winget`. Note that the current
+	b. Install git through command line call `winget install git --id Git.Git --source winget`. If that does not work,
+       try `winget install git --id Microsoft.Git --source winget`.  Note that the current
        window will not have python in its path, so you may want to create a new cmd shell.
 
 3. Clone repository
@@ -43,20 +39,17 @@ steps
     a. In any writeable directory (preferrably in C:\Users\Einstein, `cd \Users\Einstein`), run 
     `git clone https://github.com/Einsteins-Workshop/launch-mc.git`
 
-4. In command prompt, type `echo %COMPUTERNAME%` to check that %COMPUTERNAME% has the correct format, either starting 
-with EINSTEIN and ending in two digits or starting with some number of digits. If not, report to IT
+4. Make sure that Minecraft is already installed on the computer
 
-5. Make sure that Minecraft is already installed on the computer
-
-6. If using a windows machine, go to repository in a command shell that is run as admininstrator and 
+5. If using a windows machine, go to repository in a command shell that is run as admininstrator and 
 
     a. Run `pip install pywin32`
 
-    b. Run `python windows_setup.py` while in the git clone directory
+    b. Run `python windows_setup.py` while in the git clone src directory(e.g. `cd launch-mc\src`)
 
-7. Copy shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
+6. Copy one or two shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
 
-8. Pin the 1.19.4 Minecraft launcher to the taskbar.
+7. Pin the 1.19.4 Minecraft launcher to the taskbar.
 
 
 
@@ -66,5 +59,3 @@ The script should do the following:
 2. Move files to launch-mc\build directory
 3. Create shortcuts
 
-
-After setup, make sure to run mc-update.bat to start update process
