@@ -31,8 +31,9 @@ steps
 	a. To check, run `git --version`.  If this gives any sort of version, then skip remaining install git steps
 
 	b. Install git through command line call `winget install git --id Git.Git --source winget`. If that does not work,
-       try `winget install git --id Microsoft.Git --source winget`.  Note that the current
-       window will not have python in its path, so you may want to create a new cmd shell.
+       try `winget install git --id Microsoft.Git --source winget`.  If that doesn't work, go to 
+       https://git-scm.com/install/windows, download the most recent version of git, and run as administrator.
+       Note that the current window will not have python in its path, so you may want to create a new cmd shell.
 
 3. Clone repository
 

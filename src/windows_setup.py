@@ -30,7 +30,7 @@ except RuntimeError as err:
 
 # Check if python excecutable is appropriate
 python_path = os.path.dirname(sys.executable)
-if not(python_path.startswith("C:\Program Files")):
+if not(python_path.startswith("C:\\Program Files")):
     print(f"The python installation that you are using, {python_path}, is not associated with the system.")
     print("Make sure to run with admin privileges.")
     exit()
@@ -41,7 +41,7 @@ subprocess.run(["pip", "install", "portablemc"])
 
 new_path = os.path.join("build")
 os.makedirs(new_path, exist_ok=True)
-original_path = os.path.join("../windows", "etc")
+original_path = os.path.join("windows", "etc")
 shutil.copytree(original_path, new_path, dirs_exist_ok=True)
 
 try:
