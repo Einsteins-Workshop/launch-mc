@@ -58,7 +58,7 @@ except subprocess.CalledProcessError:
 
     batch_file = "mc-1.19.4.bat"
     with open(os.path.join("windows", "template", batch_file)) as template:
-        batch_file_template = Template(template.readlines())
+        batch_file_template = Template(template.read())
         batch_file_string = batch_file_template.substitute(context)
 
         os.makedirs(new_path, exist_ok=True)
