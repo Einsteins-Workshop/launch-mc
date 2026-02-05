@@ -20,11 +20,13 @@ Manual:
 
 	a. To check, run cmd in admin mode: type Windows-R, enter `cmd`, and do Shift-Ctl-Enter, typing in admin password
 
-	b. Type `python --version`.  If this gives a python version of 3.12 or above, then skip remaining install python
+	b. Type `python --version`.  If this gives a python version of 3.12.1 or above, then skip remaining install python
 steps
 
     c. Install python through command line, with `winget install Python.Python.3.13` . Note that the current
-       window will not have python in its path, so you may want to create a new cmd shell.
+       window will not have python in its path, so you may want to create a new cmd shell. If this does not work, go to
+       www.python.org and find a version-specific python installer (not the Python install manager).  Do a custom
+       installation and make sure that python is added to the path and is installed in C:\Program Files
 
 2. Install git.
 
@@ -46,7 +48,7 @@ steps
 
     a. Run `pip install pywin32`
 
-    b. Run `python windows_setup.py` while in the git clone src directory(e.g. `cd launch-mc\src`)
+    b. Change directory to launch_mc/src and run `python windows_setup.py`
 
 6. Copy one or two shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
 
