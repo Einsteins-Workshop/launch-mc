@@ -58,6 +58,9 @@ def computer_number():
     if result == None:
         result = re.search(r'^(\d+)-EW', computer_name)
 
+    if result == None:
+        result = re.search(r'^(T\d+)-EW', computer_name)
+
     if result == None and computer_name == "BOOKKEEPER":
         return "01"
 
