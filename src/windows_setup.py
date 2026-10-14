@@ -46,8 +46,8 @@ shutil.copytree(original_path, new_path, dirs_exist_ok=True)
 
 try:
     subprocess.run(["pip", "install", "."], check=True)
+    create_shortcut_to_etc_bin("EW Minecraft.lnk", "launch-1-21-11", "mc-1.21.11.ico")
     create_shortcut_to_etc_bin("EW Minecraft.lnk", "launch-1-19-4", "mc-1.19.4.ico")
-    create_shortcut_to_etc_bin("Code Kingdoms.lnk", "launch-code-kingdoms", "mc-1.16.5.ico")
 except subprocess.CalledProcessError:
     print("Failed to install python file")
     # Use our backup plan to install templated .bat file
@@ -56,7 +56,7 @@ except subprocess.CalledProcessError:
         'portable_mc': str(find_portablemc())
     }
 
-    batch_file = "mc-1.19.4.bat"
+    batch_file = "mc-1.21.11.bat"
     with open(os.path.join("windows", "template", batch_file)) as template:
         batch_file_template = Template(template.read())
         batch_file_string = batch_file_template.substitute(context)

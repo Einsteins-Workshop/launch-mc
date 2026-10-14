@@ -2,7 +2,7 @@
 Windows scripts for launching and updating Minecraft clients
 
 The scripts here are specific to our organization's needs. This means
-we target our specific Minecraft versions (1.19.4 and 1.16.5 as of 2025-03-27),
+we target our specific Minecraft versions (1.21.11 and 1.19.4 as of 2026-10-14),
 and our desktop shortcuts have names and icons that make sense for us.
 Please fork and modify the repo as necessary according to your personal preferences.
 
@@ -52,7 +52,7 @@ steps
 
 6. Copy one or two shortcuts from the subdirectory build in the launch-mc subdirectory to the Desktop
 
-7. Pin the 1.19.4 Minecraft launcher to the taskbar.
+7. Pin the 1.21.11 Minecraft launcher to the taskbar.
 
 
 

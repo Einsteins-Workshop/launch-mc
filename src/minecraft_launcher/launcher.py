@@ -22,6 +22,25 @@ def launch_1_19_4():
         text=True
     )
 
+def launch_1_21_11():
+    app_dir = app_directory()
+    return subprocess.run(
+        [
+            find_portablemc(),
+            "--work-dir",
+            app_dir,
+            "--main-dir",
+            app_dir,
+            "start",
+            "--username",
+            user_name(),
+            "1.21.11"
+        ],
+        shell=True,
+        capture_output=True,
+        text=True
+    )
+
 def launch_code_kingdoms():
     app_dir = app_directory()
 
