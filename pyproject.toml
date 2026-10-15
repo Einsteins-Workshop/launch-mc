@@ -10,3 +10,4 @@ requires-python = ">=3.11"
 [project.scripts]
 launch-1-19-4 = "minecraft_launcher.launcher:launch_1_19_4"
 launch-code-kingdoms = "minecraft_launcher.launcher:launch_code_kingdoms"
+launch-1-21-11 = "minecraft_launcher.launcher:launch_1_21_11"
