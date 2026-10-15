@@ -99,4 +99,4 @@ def app_directory():
         return ('s:\\minecraft')
     if os.path.exists('c:\\etc\\bin'):
         return ('c:\\etc\\bin\\minecraft')
-    raise FileNotFoundError("Could not find an app directory in either s: or c:\etc\bin.")
+    raise FileNotFoundError("Could not find an app directory in either s: or c:\\etc\\bin.")
