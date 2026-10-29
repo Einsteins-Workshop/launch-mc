@@ -86,7 +86,7 @@ def computer_number():
     if result == None:
         raise RuntimeError(f"Could not find computer number from {computer_name}")
     else:
-        return result.group(0)
+        return result.group(1)
 
 def user_name():
     return f"EinsteinMC_{computer_number()}"
