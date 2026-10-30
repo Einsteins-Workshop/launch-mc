@@ -8,11 +8,11 @@ def launch_1_19_4():
     return subprocess.run(
         [
             find_portablemc(),
+            "start",
             "--work-dir",
             app_dir,
             "--main-dir",
             app_dir,
-            "start",
             "--username",
             user_name(),
             "1.19.4"
