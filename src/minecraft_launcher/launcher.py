@@ -27,11 +27,11 @@ def launch_1_21_11():
     return subprocess.run(
         [
             find_portablemc(),
+            "start",
             "--work-dir",
             app_dir,
             "--main-dir",
             app_dir,
-            "start",
             "--username",
             user_name(),
             "1.21.11"
@@ -47,11 +47,11 @@ def launch_code_kingdoms():
     return subprocess.run(
         [
             find_portablemc(),
+            "start",
             "--work-dir",
             app_dir,
             "--main-dir",
             app_dir,
-            "start",
             "--login",
             user_email(),
             "1.16.5"
