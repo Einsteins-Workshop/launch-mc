@@ -74,6 +74,10 @@ def find_portablemc():
 def computer_number():
     computer_name = os.environ["COMPUTERNAME"]
     result = re.search(r'Einstein.*-(\d*)$', computer_name, flags=re.IGNORECASE)
+
+    if result == None:
+        result = re.search(r'Einstein\D*(\d*)$', computer_name, flags=re.IGNORECASE)
+
     if result == None:
         result = re.search(r'^(\d+)-EW', computer_name)
 
