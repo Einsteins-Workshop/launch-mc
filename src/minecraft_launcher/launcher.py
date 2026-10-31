@@ -9,8 +9,6 @@ def launch_1_19_4():
         [
             find_portablemc(),
             "start",
-            "--work-dir",
-            app_dir,
             "--main-dir",
             app_dir,
             "--username",
@@ -28,8 +26,6 @@ def launch_1_21_11():
         [
             find_portablemc(),
             "start",
-            "--work-dir",
-            app_dir,
             "--main-dir",
             app_dir,
             "--username",
@@ -48,8 +44,6 @@ def launch_code_kingdoms():
         [
             find_portablemc(),
             "start",
-            "--work-dir",
-            app_dir,
             "--main-dir",
             app_dir,
             "--login",
