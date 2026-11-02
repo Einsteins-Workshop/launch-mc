@@ -37,7 +37,7 @@ if not(python_path.startswith("C:\\Program Files")):
 
 
 os.chdir("..")
-subprocess.run(["pip", "install", "portablemc"])
+subprocess.run(["pip", "install", "--upgrade", "portablemc"])
 
 new_path = os.path.join("build")
 os.makedirs(new_path, exist_ok=True)
