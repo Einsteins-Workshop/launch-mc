@@ -1,4 +1,4 @@
-@echo off
+
 set LAST_TWO=%COMPUTERNAME:~-2%
 echo %LAST_TWO%| findstr /r "^[0-9][0-9]$" >nul
 
@@ -14,4 +14,4 @@ set username=EinsteinMC_%DIGITS%
 set pmc=C:\Program Files\Python312\Scripts\portablemc.exe
 set mcdir=S:\Minecraft
 
-start "" /min "%pmc%" --work-dir "%mcdir%" --main-dir "%mcdir%" start --username "%username%" 1.19.4
+start "" /min "%pmc%" start --main-dir "%mcdir%" --username "%username%" 1.19.4
