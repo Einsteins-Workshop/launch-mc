@@ -23,7 +23,11 @@ Manual:
 	b. Type `python --version`.  If this gives a python version of 3.12.1 or above, then skip remaining install python
 steps
 
-    c. Install python through command line, with `winget install Python.Python.3.13` . Note that the current
+    c. Install python through command line, with `winget install 9NQ7512CXL7T` (which should install python install
+       manager aka pymanager), and `pymanager install --target="C:\Program Files\Python315" 3.15`. Make sure
+       that system environment variables are set up correctly by going to edit System variables
+2. 
+3. `winget install Python.Python.3.13` . Note that the current
        window will not have python in its path, so you may want to create a new cmd shell. If this does not work, go to
        www.python.org and find a version-specific python installer (not the Python install manager).  Do a custom
        installation and make sure that python is added to the path and is installed in C:\Program Files
